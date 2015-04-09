@@ -1,0 +1,35 @@
+
+// ANDROID *********************************************************
+
+".winInitContainer[platform=android]": {
+	backgroundColor:Alloy.CFG.WHITE,
+	navBarHidden: "true",
+	tabBarHidden: "true",
+	exitOnClose: "true"
+}
+
+".viewBackground[platform=android]": {
+	backgroundColor: 	Alloy.CFG.WHITE,
+	height: Ti.UI.FILL,
+    width: Ti.UI.FILL
+  
+}
+
+
+
+
+// IPHONE *********************************************************
+
+".winInitContainer[platform=ios]": {
+	backgroundColor:Alloy.CFG.WHITE,
+	navBarHidden: "true",
+	tabBarHidden: "true",
+	exitOnClose: "true"
+}
+
+".viewBackground[platform=ios]": {
+	backgroundColor: 	Alloy.CFG.WHITE,
+	height: Ti.UI.FILL,
+    width: Ti.UI.FILL
+  
+}

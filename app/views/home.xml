@@ -1,0 +1,14 @@
+<Alloy>
+	<View class="viewHome" id="viewHome" >
+		
+		
+		<!-- Content -->
+		<View class="containerHome" id="containerHome" >
+			
+			
+		
+		</View>
+
+		
+	</View>
+</Alloy>

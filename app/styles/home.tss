@@ -1,0 +1,26 @@
+// ANDROID *********************************************************
+
+".viewHome[platform=android]": { 
+	backgroundColor:Alloy.CFG.WHITE
+}
+
+".containerHome[platform=android]": {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 0
+}
+
+
+// IPHONE *********************************************************
+
+".viewHome[platform=ios]": { 
+	backgroundColor:Alloy.CFG.WHITE
+}
+
+".containerHome[platform=ios]": {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 0
+}

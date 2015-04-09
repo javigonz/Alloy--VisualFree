@@ -1,0 +1,212 @@
+// ANDROID *********************************************************
+
+".viewLogin[platform=android]": { 
+	backgroundColor:Alloy.CFG.WHITE,
+	navBarHidden: "true",
+	tabBarHidden: "true",
+	exitOnClose: 'true'
+}
+
+".logoTop[platform=android]": {
+	top: 0,
+	height: 75
+}
+
+".logotipo[platform=android]": {
+	height: 75
+}
+
+".containerLogin[platform=android]": {
+    height: Ti.UI.FILL,
+    width: Alloy.CFG.WidthDevice,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 90,
+    layout: "vertical"
+   
+}
+
+
+".loginName[platform=android]": {
+    height: 40,
+    width: '90%',
+    top: 10,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK,
+    borderColor: Alloy.CFG.BLUE,
+    borderWidth : '2px',
+    backgroundColor:'transparent',
+
+}
+
+".loginPass[platform=android]": {
+    height: 40,
+    width: '90%',
+    top: 0,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK,
+    borderColor: Alloy.CFG.BLUE,
+    borderWidth : '2px',
+    backgroundColor:'transparent',
+}
+
+
+".viewButtonLogin[platform=android]": {
+    height: 210,
+    width: '90%',
+    top: 10,
+    color: Alloy.CFG.WHITE,
+    layout: 'vertical'
+}
+
+".buttonLogin[platform=android]": {
+    height: 40,
+    width: '100%',
+    backgroundColor: Alloy.CFG.BLUE,
+    left: 0,
+    top: 20,
+    color: Alloy.CFG.WHITE,
+    font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	18,
+		fontWeight: 'normal'
+	},
+	bottom: 20
+
+}
+
+".view_showpass[platform=android]": {
+    height: 35,
+    width: '90%',
+    top: 10,
+    layout: 'horizontal'
+
+}
+
+".buttonChecking[platform=android]": {
+	backgroundImage: '/images/checkin_off.png',
+    height: 25,
+    width:25,
+    top: 0,
+    left: 0
+
+}
+
+".buttonChecking_text[platform=android]": {
+    left: 5,
+    
+    color: Alloy.CFG.BLACK,
+    font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	14,
+		fontWeight: 'normal'
+	},
+
+}
+
+
+
+
+// IPHONE  *********************************************************
+
+".viewLogin[platform=ios]": {
+	backgroundColor: 	Alloy.CFG.WHITE,
+	exitOnClose: 'true'
+  
+}
+
+
+
+".containerLogin[platform=ios]": {
+    height: Ti.UI.FILL,
+    width: Ti.Platform.displayCaps.platformWidth,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 70
+}
+
+".logoTop[platform=ios]": {
+	top: 0,
+	height: 80,
+    width: Ti.UI.FILL
+}
+
+
+".loginName[platform=ios]": {
+    height: 40,
+    width: '90%',
+    backgroundColor: Alloy.CFG.WHITE,
+    borderColor: Alloy.CFG.BLUE,
+    top: 10,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK
+
+}
+
+".loginPass[platform=ios]": {
+    height: 40,
+    width: '90%',
+    backgroundColor: Alloy.CFG.WHITE,
+    borderColor: Alloy.CFG.BLUE,
+    top: 49,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK
+}
+
+
+".viewButtonLogin[platform=ios]": {
+    height: 180,
+    width: '90%',
+    top: 120,
+    color: Alloy.CFG.WHITE,
+    layout: 'vertical'
+
+}
+
+".buttonLogin[platform=ios]": {
+    height: 40,
+    width: '100%',
+    backgroundColor: Alloy.CFG.BLUE,
+    left: 0,
+    top: 20,
+    color: Alloy.CFG.WHITE,
+    font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	18,
+		fontWeight: 'normal'
+	},
+	bottom: 20
+
+}
+
+".view_showpass[platform=ios]": {
+    height: 35,
+    width: '90%',
+    top: 100,
+    layout: 'horizontal'
+
+}
+
+".buttonChecking[platform=ios]": {
+	backgroundImage: '/images/checkin_off.png',
+    height: 24,
+    width:24,
+    top: 0,
+    left: 0
+
+}
+
+".buttonChecking_text[platform=ios]": {
+    left: 5,
+    top: 8,
+    color: Alloy.CFG.BLACK,
+    font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	14,
+		fontWeight: 'normal'
+	},
+
+}
+
+
+
+// ALL     *********************************************************
+

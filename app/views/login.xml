@@ -1,0 +1,30 @@
+<Alloy>
+	
+	<View class="viewLogin" id="viewLogin">
+		
+		<!-- Logotipo -->
+		<View class="logoTop">
+			<ImageView image="/images/Logo_VisualFree.png" class="logotipo"></ImageView>
+		</View>
+		
+		<!-- Content -->
+		<View class="containerLogin" id="containerLogin" >
+				
+				<TextField class="loginName" id="loginName"  touchEnabled="true"  passwordMask="false" hintText="L('text_1')" ></TextField>
+				<TextField class="loginPass" id="loginPass"  touchEnabled="true" passwordMask="true" hintText="L('text_2')"  ></TextField>
+				
+				<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">
+						<Button class="buttonChecking" id="buttonChecking" ></Button>
+						<Label class="buttonChecking_text" id="buttonChecking_text" text="L('text_4')"></Label>
+				</View>
+					
+				<View class="viewButtonLogin">
+					<Button class="buttonLogin" id="buttonLogin" title="L('text_3')" onClick="handler_login"></Button>
+				</View>
+		
+		</View>
+
+		
+	</View>
+	
+</Alloy>

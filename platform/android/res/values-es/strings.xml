@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<!-- LOGIN -->
+	<string name="text_1">Correo electrónico</string>
+	<string name="text_2">Contraseña</string>
+	<string name="text_3">ENTRAR</string>
+	<string name="text_4">Mostrar contraseña</string>
+
+
+	<!-- SCANNER -->
+	<string name="text_5">Escanear Bono de código QR desde la galería</string>
+	<string name="text_6">Escanear Bono de código QR con la cámara</string>
+	<string name="text_7">Código QR desde la cámara trasera</string>
+	<string name="text_8">Cerrar</string>
+	<string name="text_14">Introduce código del Bono</string>
+	<string name="text_15">VALIDAR BONO</string>
+	<string name="text_21">CONSUMIR BONO</string>
+	<string name="text_22">Puedes consumir a continuación tu Bono con código</string>
+	<string name="text_23">¡Enhorabuena!, Bono consumido correctamente</string>
+
+
+	<!-- TÍTULOS -->
+	<string name="text_9">Validar Bono con código QR</string>
+	<string name="text_10">Validar Bono manualmente</string>
+	<string name="text_11">Bonos consumidos</string>
+	<string name="text_12">Bonos comprados</string>
+
+	<!-- COMÚN -->
+	<string name="text_13">Ups!! se produjo un error en la conexión, inténtalo más tarde.</string>
+	<string name="text_16">Debes introducir </string>
+
+	<!-- BONOS -->
+	<string name="text_17">Fecha de consumo:</string>
+	<string name="text_18">Fecha de compra:</string>
+	<string name="text_19">Validado por:</string>
+	<string name="text_20">Bono introducido correctamente</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<Alloy>
+	<View class="viewSectionQRManual" id="viewSectionQRManual" >
+		
+		
+		<!-- Content -->
+		<View class="containerSectionQRManual" id="containerSectionQRManual" >
+			
+			<TextField class="loginName" id="codeQR" touchEnabled="true"  passwordMask="false" hintText="L('text_14')" ></TextField>
+			<Button class="styleButton" id="styleButton" title="L('text_15')" onClick="handler_ScannerManual"></Button>
+			
+			<Label class="textDescription" id="textDescription" visible="false"></Label>
+			<Button class="styleButtonConsume" id="buttonConsume" title="L('text_21')" onClick="handler_Consume" visible="false"></Button>
+		
+		</View>
+		
+		
+	</View>
+</Alloy>

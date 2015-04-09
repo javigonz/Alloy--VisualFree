@@ -1,0 +1,55 @@
+// ANDROID *********************************************************
+
+".viewFooter[platform=android]": { 
+	height: 50,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.BLUE,
+	layout: 'horizontal'
+}
+
+".buttonView[platform=android]": {
+    height: 50,
+    backgroundColor: Alloy.CFG.BLUE
+    
+}
+
+".buttonViewOver[platform=android]": {
+    height: 50,
+    backgroundColor: Alloy.CFG.BLUE2
+    
+}
+
+".buttonImage[platform=android]": {
+	width: 35,
+	height: 35
+   
+}
+
+
+
+
+// IPHONE *********************************************************
+
+".viewFooter[platform=ios]": { 
+	height: 50,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.BLUE,
+	layout: 'horizontal'
+}
+
+".buttonView[platform=ios]": {
+    height: 50,
+    backgroundColor: Alloy.CFG.BLUE
+    
+}
+
+".buttonViewOver[platform=ios]": {
+    height: 50,
+    backgroundColor: Alloy.CFG.BLUE2
+    
+}
+
+".buttonImage[platform=ios]": {
+    width: 35,
+	height: 35
+}

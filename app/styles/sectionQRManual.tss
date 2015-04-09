@@ -1,0 +1,100 @@
+// ANDROID *********************************************************
+
+".viewSectionQRManual[platform=android]": { 
+	backgroundColor:Alloy.CFG.WHITE
+}
+
+".containerSectionQRManual[platform=android]": {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 0
+}
+
+".loginName[platform=android]": {
+    height: 40,
+    width: '90%',
+    top: 50,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK,
+    borderColor: Alloy.CFG.BLUE,
+    borderWidth : '2px',
+    backgroundColor:'transparent',
+
+}
+
+".styleButton[platform=android]": {
+    height: 40,
+    width: '90%',
+    backgroundColor: Alloy.CFG.BLUE,
+    color: Alloy.CFG.WHITE,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	14,
+		fontWeight: 'normal'
+	},
+	top: 100
+}
+
+".styleButtonConsume[platform=android]": {
+    height: 50,
+    width: '90%',
+    backgroundColor: Alloy.CFG.GREEN,
+    color: Alloy.CFG.WHITE,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	15,
+		fontWeight: 'normal'
+	},
+	top: 100
+}
+
+".textDescription[platform=android]": {
+    width: '90%',
+    color: Alloy.CFG.BLACK,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	15,
+		fontWeight: 'normal'
+	},
+	top: 50
+}
+
+
+// IPHONE *********************************************************
+
+".viewSectionQRManual[platform=ios]": { 
+	backgroundColor:Alloy.CFG.WHITE
+}
+
+".containerSectionQRManual[platform=ios]": {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.CFG.WHITE,
+    top: 0
+}
+
+".loginName[platform=ios]": {
+    height: 40,
+    width: '90%',
+    backgroundColor: Alloy.CFG.WHITE,
+    borderColor: Alloy.CFG.GREY_LIGHT,
+    top: 40,
+    paddingLeft: 5,
+    color: Alloy.CFG.BLACK,
+    top: 40
+
+}
+
+".styleButton[platform=ios]": {
+    height: 40,
+    width: '90%',
+    backgroundColor: Alloy.CFG.BLUE,
+    color: Alloy.CFG.WHITE,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+		fontSize: 	14,
+		fontWeight: 'normal'
+	},
+	top: 90
+}

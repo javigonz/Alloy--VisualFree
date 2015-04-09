@@ -1,0 +1,13 @@
+<Alloy>
+	<View class="viewSectionBonosConsumed" id="viewSectionBonosBuyed" >
+		
+		
+		<!-- Content -->
+		<TableView id="tableView_Bono" class="tableList">
+			
+	    	
+	   </TableView>
+
+		
+	</View>
+</Alloy>

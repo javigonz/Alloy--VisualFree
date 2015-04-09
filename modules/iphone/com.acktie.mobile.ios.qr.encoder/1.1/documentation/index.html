@@ -1,0 +1,107 @@
+<h1>Acktie Mobile QR Encoder Module</h1>
+
+<h2>Description</h2>
+
+<p>This module allows for quick generation of QR Codes on your mobile device (currently only on iOS).</p>
+
+<h2>Accessing the Acktie Mobile Airprint Module</h2>
+
+<p>To access this module from JavaScript, you would do the following:</p>
+
+<pre><code>var qrEncoder = require('com.acktie.mobile.ios.qr.encoder');
+</code></pre>
+
+<p>The qrEncoder variable is a reference to the Module object. </p>
+
+<h2>Reference</h2>
+
+<p>The following are the Javascript functions you can call with the module.</p>
+
+<h3>init</h3>
+
+<p>This options initializes the QR Encoder.  In this option you can set the size, margin, and correction level (see below for detail).</p>
+
+<h4>Properties</h4>
+
+<p>The following are the valid properties that can be passed into the print function.</p>
+
+<h4>size (optional)</h4>
+
+<p>This property is used set the size of the returned QR Encoded PNG blob.  The size is a single value with matching height and width.</p>
+
+<p>For example, if 100 is entered.  The QR Encoded PNG will be of size 100 height and 100 width.  However, you can use an imageview to display it however you want.</p>
+
+<p>size: 100</p>
+
+<p>The default is 300 x 300.</p>
+
+<p><em>Note</em>:  If you intent to use the module to display QR's that will be read by other mobile devices it is recommended that you create a QR bigger then you need and just scale it down in the image view.  This will give you a clear QR Code.</p>
+
+<h4>margin (optional)</h4>
+
+<p>The margin is a border around the QR code.  You can size the margin to your needs or even remove it by passing in 0.</p>
+
+<p>Example:</p>
+
+<p>margin: 3</p>
+
+<p>The default is 1</p>
+
+<h4>correction (optional)</h4>
+
+<p>This property will set the correction level of the QR Code rendered.  The higher correction level the more dense the QR code is however it allow for redundent data so part of the QR code may be missing or damaged and it will still be readable.</p>
+
+<ul>
+<li>Level L (Low)    7% of codewords can be restored.</li>
+<li>Level M (Medium)     15% of codewords can be restored.</li>
+<li>Level Q (Quartile)   25% of codewords can be restored.</li>
+<li>Level H (High)   30% of codewords can be restored.</li>
+</ul>
+
+<p>For more information see (Wikipedia)[http://en.wikipedia.org/wiki/QR<em>code#Error</em>correction]</p>
+
+<p>Example:</p>
+
+<p>correction: 'M'</p>
+
+<p>Valid input is L, M, Q or H</p>
+
+<p>The default is 'L',</p>
+
+<h4>useJISEncoding (optional):</h4>
+
+<p>This option is used to encode the QR code result with the Shift JIS encoding.  This is necessary when encoding Kanji Characters and UTF-8 is not sufficient.
+By default the QR encoder will use UTF-8.  For most circumstances UTF-8 will work fine. </p>
+
+<p>Example:</p>
+
+<p>useJISEncoding: true,</p>
+
+<p>By default this value is false.</p>
+
+<h3>stringToQR</h3>
+
+<p>This function is used to generate the QR Code and return it as a PNG blob.  The only option for this function is text.</p>
+
+<h4>text (required)</h4>
+
+<p>Use this property to pass in the text that will be converted to a QR Code.  The limit is 7000 characters.  </p>
+
+<h2>Known issues</h2>
+
+<p>None</p>
+
+<h2>Change Log</h2>
+
+<ul>
+<li>1.0 Initial Release</li>
+<li>1.1 Added UTF-8 Byte order mark (used for more accurate decodeing) and useJISEndoding option.</li>
+</ul>
+
+<h2>Author</h2>
+
+<p>Tony Nuzzi @ Acktie</p>
+
+<p>Twitter: @Acktie</p>
+
+<p>Email: support@acktie.com</p>
