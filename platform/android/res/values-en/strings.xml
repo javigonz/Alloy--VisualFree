@@ -26,6 +26,7 @@
 	<string name="text_11">Bonos consumidos</string>
 	<string name="text_12">Bonos comprados</string>
 
+
 	<!-- COMÚN -->
 	<string name="text_13">Ups!! se produjo un error en la conexión, inténtalo más tarde.</string>
 	<string name="text_16">Debes introducir </string>
@@ -35,5 +36,6 @@
 	<string name="text_18">Fecha de compra:</string>
 	<string name="text_19">Validado por:</string>
 	<string name="text_20">Bono introducido correctamente</string>
+	<string name="text_24">Fecha de caducidad:</string>
 
 </resources>

@@ -78,7 +78,7 @@ function loadBonosBuyed()
 			textDateCompra.applyProperties(textDate);
 			
 			var textDateConsumo = Ti.UI.createLabel({
-				text: L('text_17') + ' ' + element.fecha_compra
+				text: L('text_24') + ' ' + element.fecha_caducidad
 			});
 			textDateConsumo.applyProperties(textDate);
 			
