@@ -11,7 +11,7 @@
 		<View class="containerLogin" id="containerLogin" >
 				
 				<TextField class="loginName" id="loginName"  touchEnabled="true"  passwordMask="false" hintText="L('text_1')" ></TextField>
-				<TextField class="loginPass" id="loginPass"  touchEnabled="true" passwordMask="true" hintText="L('text_2')"  ></TextField>
+				<TextField class="loginPass" id="loginPass"  touchEnabled="true" passwordMask="true" hintText="L('text_2')" ></TextField>
 				
 				<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">
 						<Button class="buttonChecking" id="buttonChecking" ></Button>

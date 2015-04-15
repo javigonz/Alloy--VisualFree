@@ -219,6 +219,7 @@ function eventHandlerSection4(e)
 
 function eventHandlerSection5(e)
 {
+	Alloy.Globals.CloseSession = 'true';
 	Ti.App.fireEvent('openLoading');
 	Ti.App.addEventListener('loadDataCloseSession', closeSession);
 	managment_Data.LoadWebService_CloseSession();

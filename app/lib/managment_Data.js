@@ -63,6 +63,51 @@ exports.LoadWebService_Login = function(dataUser, dataPassword){
 
 
 //************************************************************************************************************************
+//Carga WEBSERVICE de Login con Token en la app
+//************************************************************************************************************************
+exports.LoadWebService_LoginToken = function(myToken){
+	
+	var client = Ti.Network.createHTTPClient({
+	     onload : function(e) {
+	     	
+	     		try{
+			         datamodel_LoginToken = JSON.parse (this.responseText);
+			         datamodel_Login = JSON.parse (this.responseText);
+			         Ti.App.fireEvent('loadDataLoginToken');
+	     		}
+	     		catch (e){
+	     			 Ti.App.fireEvent('closeLoading');
+	     			 managment_View.OpenInfoWindow( L('text_13'));
+	     		}
+	        
+
+	     },
+	     onerror : function(e) {
+	         Ti.App.fireEvent('closeLoading');
+	         managment_View.OpenInfoWindow( L('text_13'));
+	     },
+	     timeout : 5000  // in milliseconds
+ 	});
+ 	
+    client.validatesSecureCertificate = false;
+
+ 	client.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+ 	
+	var dataSend = {
+			 			'method': 'checkToken',
+			    		'params': {
+			    					'token': myToken
+			    				  }
+			  	   };
+			  	
+			  	  			  
+ 	
+ 	client.open("POST", url_WebService_Login);
+	client.send( {data:JSON.stringify(dataSend)});
+	
+};
+
+//************************************************************************************************************************
 //Carga WEBSERVICE de Cerrar Sesion
 //************************************************************************************************************************
 exports.LoadWebService_CloseSession = function(){

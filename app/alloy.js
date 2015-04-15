@@ -7,6 +7,7 @@ Alloy.Globals.ActualSection;
 Alloy.Globals.IsLoading;
 Alloy.Globals.Header;
 Alloy.Globals.Menu;
+Alloy.Globals.CloseSession = 'false';
 
 
 //Paleta de Colores
@@ -41,7 +42,9 @@ else{
 
 
 /////////////////////////////////////////////////////////////Modelo de Datos
+
 var datamodel_Login = [];
+var datamodel_LoginToken = [];
 var datamodel_CloseSession = [];
 var datamodel_BonosConsumed = [];
 var datamodel_BonosBuyed = [];

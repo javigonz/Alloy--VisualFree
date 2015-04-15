@@ -5,6 +5,7 @@ var utils = require('utils');
 var validate = require('hdjs.validate');
 var validator = new validate.FormValidator();
 var checking_enable = 'false';
+var tokenFile;
 
 show();
 
@@ -21,6 +22,32 @@ show();
 
 
 function show(){
+	
+	
+	//Comprobar si ya existe un Token de Login
+	tokenFile = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'tokenFile.txt');
+	
+	if (tokenFile.exists() === true)
+	{
+		var token = tokenFile.read();
+		
+		if (token.length > 1 && Alloy.Globals.CloseSession == 'false') //Existe un token guardado, entro directamente
+		{
+			Ti.App.addEventListener('loadDataLoginToken', loginWithToken);
+			managment_Data.LoadWebService_LoginToken(token.text);
+		}
+		else
+		{
+			console.log('Token con longitud 0, voy a logarme');
+			Alloy.Globals.CloseSession = 'false';
+			//IR AL LOGIN NORMAL
+		}
+	}
+	else
+	{
+		console.log('No existe el fichero de token y se crea');
+	}
+
 
 	Ti.App.fireEvent('closeLoading');
 	
@@ -29,6 +56,26 @@ function show(){
 	Alloy.Globals.ActualSection = 'login';
 		
 }
+
+function loginWithToken(){
+	
+	Ti.App.removeEventListener('loadDataLoginToken', loginWithToken);
+	
+	if (datamodel_LoginToken.result === 'ok')
+	{
+		console.log('LOGIN TOKEN OK');
+		Ti.App.fireEvent('IsProviderUser');
+		managment_View.OpenSectionParam('home',[]);
+	}
+	else
+	{
+		console.log('LOGIN TOKEN KO');
+		managment_View.OpenInfoWindow( L('text_13'));
+		Ti.App.fireEvent('closeLoading');
+	}
+}
+
+
 
 function validateForm() {
 	validator.run([
@@ -76,6 +123,8 @@ function validateUser(){
 	
 	if (datamodel_Login.result === 'ok')
 	{
+		tokenFile.write(datamodel_Login.token);
+		
 		// type = 2 -> proveedor    type = 3 -> administrador
 		Ti.App.fireEvent('IsProviderUser');
 		managment_View.OpenSectionParam('home',[]);

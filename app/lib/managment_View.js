@@ -73,14 +73,13 @@ exports.closeActualSection = function(){
 		}
 		
 		
-		
-		if (Alloy.Globals.ViewActive.length == 1) 
+		console.log('Estoy en la secion: ' +  Alloy.Globals.ActualSection);
+		if (Alloy.Globals.ViewActive.length == 2 || Alloy.Globals.ActualSection == 'login' || Alloy.Globals.ActualSection == 'home') 
 		{
 			//Estoy en la primera página
 		}
 		else
-		{
-			
+		{	
 			Ti.App.fireEvent('openLoading');
 			
 			var actualContainer = Alloy.Globals.ActualContainer;
