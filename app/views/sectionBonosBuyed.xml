@@ -3,7 +3,7 @@
 		
 		
 		<!-- Content -->
-		<TableView id="tableView_Bono" class="tableList">
+		<TableView id="tableView_Bono" class="tableList" >
 			
 	    	
 	   </TableView>

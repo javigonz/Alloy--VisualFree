@@ -64,12 +64,17 @@
 // IPHONE *********************************************************
 
 ".viewSectionBonosConsumed[platform=ios]": { 
-	backgroundColor:Alloy.CFG.WHITE
+	width: Alloy.CFG.WidthDeviceIphone,
+	backgroundColor: Alloy.CFG.WHITE,
+	top: 0,
+	left: 0
 }
 
 ".tableList[platform=ios]": {
-	separatorColor: Alloy.CFG.GREY
-	}
+	height: Alloy.CFG.HeightDeviceIphone,
+	separatorColor: Alloy.CFG.GREY,
+	top: 0
+		}
 	".rowList[platform=ios]": {
 		height: 90,
 		backgroundColor: Alloy.CFG.WHITE,

@@ -27,7 +27,6 @@ var self = Ti.UI.createWindow({
 // Depending on the platform, load the appropriate qr module
 if (Ti.Platform.osname === 'iphone') {
 	qrreader = require('com.acktie.mobile.ios.qr');
-	qrEncoder = require('com.acktie.mobile.ios.qr.encoder');
 } else if (Ti.Platform.osname === 'android') {
 	qrreader = require('com.acktie.mobile.android.qr');
 }
@@ -36,7 +35,7 @@ if (Ti.Platform.osname === 'iphone') {
 exports.createContentQR_READER = function(containerView)
 {
 	///////////////////////////////////////////////////////////////////////ESCANEAR DESDE LA BIBLIOTECA DE IMÁGENES
-	if (Ti.Platform.osname == "iphone")
+	/*if (Ti.Platform.osname == "iphone")
 	{
 		var view2 = Titanium.UI.createView({
 			borderRadius: '5',
@@ -82,7 +81,7 @@ exports.createContentQR_READER = function(containerView)
 		view2.add(icon2);
 		view2.add(label2);
 		containerView.add(view2);
-	}
+	}*/
 	
 	
 	

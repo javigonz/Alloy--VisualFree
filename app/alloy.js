@@ -25,7 +25,7 @@ Alloy.CFG.GREEN      	= "#3abd0c";
 Alloy.CFG.WidthDeviceIphone   = Ti.Platform.displayCaps.platformWidth;
 Alloy.CFG.WidthDeviceAndroid   = Ti.Platform.displayCaps.platformWidth / (Titanium.Platform.displayCaps.dpi / 160);
 Alloy.CFG.HeightDevice   = Ti.Platform.displayCaps.platformHeight / (Titanium.Platform.displayCaps.dpi / 160);
-
+Alloy.CFG.HeightDeviceIphone = Ti.Platform.displayCaps.platformHeight;
 
 //Fuentes
 if(Ti.Platform.osname =='android') {

@@ -34,7 +34,7 @@ function show(){
 	Ti.App.addEventListener('loadBonosConsumed', loadBonosConsumed);
 	managment_Data.LoadWebService_BonosConsumidos();
 	
-	$.tableView_Bono.height = Alloy.CFG.HeightDevice - 120;
+	$.tableView_Bono.height = Alloy.CFG.HeightDeviceIphone - 120;
 }
 
 

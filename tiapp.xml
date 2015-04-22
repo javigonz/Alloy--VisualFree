@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="acs-api-key-production" type="string">SLRLCqGHhQ14J3BUVYLYx7w6NnmU4BTI</property>
-    <property name="acs-api-key-development" type="string">hxbFmFWhafglG1EE1ljpUd0HN3aJKHqd</property>
     <id>com.visualfree</id>
     <name>Visual-Free</name>
     <version>1.0</version>
@@ -41,8 +39,7 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:installLocation="auto"
-            android:versionCode="1" android:versionName="0.0.1">
+        <manifest android:installLocation="auto" android:versionCode="1" android:versionName="0.0.1">
             <supports-screens android:anyDensity="true"
                 android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
             <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
@@ -67,6 +64,7 @@
     </mobileweb>
     <modules>
         <module platform="android" version="2.0">com.acktie.mobile.android.qr</module>
+        <module platform="iphone" version="2.3">com.acktie.mobile.ios.qr</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>

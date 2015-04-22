@@ -1,7 +1,6 @@
 // ANDROID *********************************************************
 
 ".viewHeader[platform=android]": { 
-	//backgroundImage: "/images/bg_header.png",
 	backgroundColor: Alloy.CFG.BLUE,
 	height: 50,
 	width: Ti.UI.FILL,
@@ -40,7 +39,7 @@
 // IPHONE *********************************************************
 
 ".viewHeader[platform=ios]": { 
-	backgroundImage: "/images/bg_header.png",
+	backgroundColor: Alloy.CFG.BLUE,
 	height: 50,
 	width: Ti.UI.FILL,
 	top: 20
@@ -49,7 +48,7 @@
 ".buttonBack[platform=ios]":{
     height: 35,
     width: 35,
-    backgroundColor: Alloy.CFG.WHITE,
+    backgroundColor: Alloy.CFG.BLUE,
     top: 5,
     left: 5 
 }
@@ -66,7 +65,7 @@
 
 ".viewTitleText[platform=ios]": {
 	left: 0,
-	color: Alloy.CFG.BLUE,
+	color: Alloy.CFG.WHITE,
 	font: {
 		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
 		fontSize: 	15,
