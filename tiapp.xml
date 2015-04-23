@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.visualfree</id>
-    <name>Visual-Free</name>
+    <id>es.visualfree</id>
+    <name>Visual_Free</name>
     <version>1.0</version>
     <publisher>JavierGonzalez</publisher>
     <url>http://www.visualfree.es</url>
