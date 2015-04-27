@@ -7,7 +7,7 @@ Ti.App.addEventListener('changeSection', function(e) {
 	changeSection();
 });
 
-Ti.App.addEventListener('IsProviderUser', providerConfiguration);
+//Ti.App.addEventListener('IsProviderUser', providerConfiguration);
 
 
 
@@ -203,18 +203,18 @@ function eventHandlerSection2(e)
 
 function eventHandlerSection3(e)
 {
-	if (datamodel_Login.type == '3')
-	{
+	//if (datamodel_Login.type == '3')
+	//{
 		managment_View.OpenSectionParam('sectionBonosConsumed',[]);
-	}
+	//}
 }
 
 function eventHandlerSection4(e)
 {
-	if (datamodel_Login.type == '3')
-	{
+	//if (datamodel_Login.type == '3')
+	//{
 		managment_View.OpenSectionParam('sectionBonosBuyed',[]);
-	}
+	//}
 }
 
 function eventHandlerSection5(e)

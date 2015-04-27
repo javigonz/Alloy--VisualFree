@@ -126,7 +126,7 @@ function validateUser(){
 		tokenFile.write(datamodel_Login.token);
 		
 		// type = 2 -> proveedor    type = 3 -> administrador
-		Ti.App.fireEvent('IsProviderUser');
+		//Ti.App.fireEvent('IsProviderUser');
 		managment_View.OpenSectionParam('home',[]);
 	}
 	else
